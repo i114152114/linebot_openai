@@ -66,7 +66,7 @@ def handle_message(event):
     try:
         response = openai.ChatCompletion.create(
             model="gpt-5-nano",
-            temperature=0.7,
+            temperature=1,
             messages=[
                 {"role": "system", "content": SYSTEM_PROMPT},
                 {"role": "user", "content": user_text}
